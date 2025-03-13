@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased text-foreground;
+    background-color: #050505;
+    background-image: 
+      radial-gradient(at 30% 20%, rgba(30, 64, 175, 0.15) 0px, transparent 50%),
+      radial-gradient(at 80% 70%, rgba(37, 99, 235, 0.1) 0px, transparent 50%);
+  }
+}
+
+@layer components {
+  .glassmorphism {
+    @apply bg-black/20 backdrop-blur-md border border-gray-800/50 shadow-xl;
+  }
+  
+  .card-glass {
+    @apply rounded-xl glassmorphism;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .input-glass {
+    @apply bg-black/30 border-gray-700/50 backdrop-blur-sm focus:border-blue-500/70 focus:ring-blue-500/40;
+  }
+  
+  .button-glass {
+    @apply glassmorphism hover:bg-gray-800/50 active:bg-gray-700/50 transition-all duration-200;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  }
+  
+  .ai-glow {
+    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.6));
+  }
+}
