@@ -2,6 +2,7 @@
 
 TaskMaster is a modern task management application with a unique twist - an AI assistant with variable personalities that responds to your productivity levels. The AI's attitude changes based on your productivity level, which increases when you complete tasks and decreases when you don't.
 
+![TaskMaster Screenshot](Screenshot%202025-03-12%20170201.png)
 
 ## 🌟 Features
 
